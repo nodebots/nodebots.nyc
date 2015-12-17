@@ -21,11 +21,15 @@
     #bot-container {
       top: -40px;
     }
+    .inkwell {
+      -webkit-filter: sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);
+      filter: sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);
+    }
   </style>
 </head>
 <body>
-  <header class="center bg-yellow py3">
-    <h1 class="m0 xl">Nodebots NYC</h1>
+  <header class="center bg-yellow py4 inkwell" style="background-image: url(./manhattan-crysler.jpg); background-size: cover; background-position: center 43%;">
+    <h1 class="m0 xl px2 inline-block" style="background: rgba(255, 255, 255, 0.5);">Nodebots NYC</h1>
   </header>
   <section id="bot-container" class="relative center">
     <svg
