@@ -1,6 +1,7 @@
-if (window.pageYOffset !== undefined) {
+var totalScroll = document.body.scrollHeight - window.innerHeight;
+
+if (window.pageYOffset !== undefined && totalScroll > 0) {
   var johnny = document.getElementById('johnny');
-  var totalScroll = document.body.scrollHeight - window.innerHeight;
 
   johnny.style.transform = "translateX(100%)";
 
